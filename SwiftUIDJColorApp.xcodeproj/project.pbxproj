@@ -13,6 +13,8 @@
 		8CDA3D0424C99C48006A3FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA3D0324C99C48006A3FFF /* Assets.xcassets */; };
 		8CDA3D0724C99C48006A3FFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA3D0624C99C48006A3FFF /* Preview Assets.xcassets */; };
 		8CDA3D0A24C99C48006A3FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA3D0824C99C48006A3FFF /* LaunchScreen.storyboard */; };
+		8CDA3D1624C99DCA006A3FFF /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA3D1524C99DCA006A3FFF /* SliderView.swift */; };
+		8CDA3D1824C9C73F006A3FFF /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA3D1724C9C73F006A3FFF /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8CDA3D0624C99C48006A3FFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CDA3D0924C99C48006A3FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CDA3D0B24C99C48006A3FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDA3D1524C99DCA006A3FFF /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		8CDA3D1724C9C73F006A3FFF /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,10 @@
 		8CDA3CFC24C99C43006A3FFF /* SwiftUIDJColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				8CDA3CFD24C99C43006A3FFF /* AppDelegate.swift */,
-				8CDA3CFF24C99C43006A3FFF /* SceneDelegate.swift */,
-				8CDA3D0124C99C43006A3FFF /* ContentView.swift */,
-				8CDA3D0324C99C48006A3FFF /* Assets.xcassets */,
-				8CDA3D0824C99C48006A3FFF /* LaunchScreen.storyboard */,
-				8CDA3D0B24C99C48006A3FFF /* Info.plist */,
+				8CDA3D1124C99CBF006A3FFF /* ViewContents */,
+				8CDA3D1224C99CD7006A3FFF /* Storyboards */,
+				8CDA3D1324C99CE9006A3FFF /* Sourse */,
+				8CDA3D1424C99D06006A3FFF /* SupportingFiles */,
 				8CDA3D0524C99C48006A3FFF /* Preview Content */,
 			);
 			path = SwiftUIDJColorApp;
@@ -73,6 +75,42 @@
 				8CDA3D0624C99C48006A3FFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CDA3D1124C99CBF006A3FFF /* ViewContents */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA3D0124C99C43006A3FFF /* ContentView.swift */,
+				8CDA3D1524C99DCA006A3FFF /* SliderView.swift */,
+				8CDA3D1724C9C73F006A3FFF /* ColorView.swift */,
+			);
+			path = ViewContents;
+			sourceTree = "<group>";
+		};
+		8CDA3D1224C99CD7006A3FFF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA3D0824C99C48006A3FFF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CDA3D1324C99CE9006A3FFF /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA3D0324C99C48006A3FFF /* Assets.xcassets */,
+			);
+			path = Sourse;
+			sourceTree = "<group>";
+		};
+		8CDA3D1424C99D06006A3FFF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA3CFD24C99C43006A3FFF /* AppDelegate.swift */,
+				8CDA3CFF24C99C43006A3FFF /* SceneDelegate.swift */,
+				8CDA3D0B24C99C48006A3FFF /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDA3D1624C99DCA006A3FFF /* SliderView.swift in Sources */,
 				8CDA3CFE24C99C43006A3FFF /* AppDelegate.swift in Sources */,
 				8CDA3D0024C99C43006A3FFF /* SceneDelegate.swift in Sources */,
 				8CDA3D0224C99C43006A3FFF /* ContentView.swift in Sources */,
+				8CDA3D1824C9C73F006A3FFF /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDJColorApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIDJColorApp/Info.plist;
+				INFOPLIST_FILE = SwiftUIDJColorApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDJColorApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIDJColorApp/Info.plist;
+				INFOPLIST_FILE = SwiftUIDJColorApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
