@@ -29,9 +29,7 @@ struct ColorSlider: View {
     
     var body: some View {
         HStack {
-            Text("0").foregroundColor(textColor)
             Slider(value: $value, in: 0...255, step: 1)
-            Text("255").foregroundColor(textColor)
         }
         .padding(.horizontal)
     }

@@ -15,6 +15,7 @@
 		8CDA3D0A24C99C48006A3FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA3D0824C99C48006A3FFF /* LaunchScreen.storyboard */; };
 		8CDA3D1624C99DCA006A3FFF /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA3D1524C99DCA006A3FFF /* SliderView.swift */; };
 		8CDA3D1824C9C73F006A3FFF /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA3D1724C9C73F006A3FFF /* ColorView.swift */; };
+		8CDA3D1A24CA0E17006A3FFF /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA3D1924CA0E17006A3FFF /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8CDA3D0B24C99C48006A3FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDA3D1524C99DCA006A3FFF /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		8CDA3D1724C9C73F006A3FFF /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		8CDA3D1924CA0E17006A3FFF /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8CDA3D0124C99C43006A3FFF /* ContentView.swift */,
 				8CDA3D1524C99DCA006A3FFF /* SliderView.swift */,
 				8CDA3D1724C9C73F006A3FFF /* ColorView.swift */,
+				8CDA3D1924CA0E17006A3FFF /* TextFieldView.swift */,
 			);
 			path = ViewContents;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				8CDA3D1624C99DCA006A3FFF /* SliderView.swift in Sources */,
 				8CDA3CFE24C99C43006A3FFF /* AppDelegate.swift in Sources */,
 				8CDA3D0024C99C43006A3FFF /* SceneDelegate.swift in Sources */,
+				8CDA3D1A24CA0E17006A3FFF /* TextFieldView.swift in Sources */,
 				8CDA3D0224C99C43006A3FFF /* ContentView.swift in Sources */,
 				8CDA3D1824C9C73F006A3FFF /* ColorView.swift in Sources */,
 			);
