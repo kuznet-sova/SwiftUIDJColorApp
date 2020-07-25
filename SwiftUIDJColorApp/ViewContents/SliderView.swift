@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SliderView: View {
     @State private var sliderValue = Double.random(in: 0...255)
-    @State private var textFieldValue = "0"
+    @State private var textFieldValue = ""
     
     var body: some View {
         SliderStack(sliderValue: $sliderValue, textFieldValue: $textFieldValue)
