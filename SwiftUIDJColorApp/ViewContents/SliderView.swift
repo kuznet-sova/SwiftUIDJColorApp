@@ -34,7 +34,7 @@ struct SliderStack: View {
                 .foregroundColor(.white)
                 .frame(width: 50, height: 35)
             
-            ColorSlider(value: $sliderValue, textColor: .white, sliderColor: .clear)
+            ColorSlider(value: $sliderValue, sliderColor: .clear)
             
             TextField("0", text: $textFieldValue)
                 .frame(width: 50, height: 35)
@@ -50,13 +50,11 @@ struct SliderStack: View {
 
 struct ColorSlider: View {
     @Binding var value: Double
-    var textColor: Color
     let sliderColor: Color
     
     var body: some View {
         HStack {
             Slider(value: $value, in: 0...255, step: 1)
         }
-        .padding(.horizontal)
     }
 }
