@@ -15,23 +15,11 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 ColorView(color: .clear)
-                VStack {
-                    HStack {
-                        SliderView().accentColor(.red)
-                        TextFieldView()
-                    }
-                    HStack {
-                        SliderView().accentColor(.green)
-                        TextFieldView()
-                    }
-                    HStack {
-                        SliderView().accentColor(.blue)
-                        TextFieldView()
-                    }
+                SliderView().accentColor(.red)
+                SliderView().accentColor(.green)
+                SliderView().accentColor(.blue)
                     
-                    Spacer()
-                }
-                .padding()
+                Spacer()
             }
         }
     }
