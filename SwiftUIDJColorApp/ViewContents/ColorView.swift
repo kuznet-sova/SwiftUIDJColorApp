@@ -12,12 +12,14 @@ struct ColorView: View {
     let color: UIColor
     
     var body: some View {
-        Color(color)
-        .cornerRadius(20)
-        .overlay(RoundedRectangle(cornerRadius: 20)
-            .stroke(Color.white, lineWidth: 4))
-        .frame(height: 150)
-        .padding()
+        VStack {
+            Color(color)
+                .cornerRadius(20)
+                .overlay(RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.white, lineWidth: 4))
+                .frame(height: 150)
+                .padding()
+        }
     }
 }
 

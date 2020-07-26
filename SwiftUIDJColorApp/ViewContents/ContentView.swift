@@ -15,9 +15,12 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 ColorView(color: .clear)
-                SliderView().accentColor(.red)
-                SliderView().accentColor(.green)
-                SliderView().accentColor(.blue)
+                SliderView()
+                    .accentColor(.red)
+                SliderView()
+                    .accentColor(.green)
+                SliderView()
+                    .accentColor(.blue)
                     
                 Spacer()
             }

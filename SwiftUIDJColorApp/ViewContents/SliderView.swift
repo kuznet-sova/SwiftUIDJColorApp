@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SliderView: View {
-    @State private var sliderValue = Double.random(in: 0...255)
+    @State private var sliderValue = 0.0
     @State private var textFieldValue = ""
     
     var body: some View {
@@ -34,7 +34,9 @@ struct SliderStack: View {
                 .foregroundColor(.white)
                 .frame(width: 50, height: 35)
             
-            ColorSlider(value: $sliderValue, sliderColor: .clear)
+            Slider(value: $sliderValue, in: 0...255, step: 1){_ in
+                self.textFieldValue = "\(Int(self.sliderValue))"
+            }
             
             TextField("0", text: $textFieldValue)
                 .frame(width: 50, height: 35)
@@ -45,16 +47,5 @@ struct SliderStack: View {
                 .keyboardType(.numbersAndPunctuation)
         }
         .padding(.horizontal)
-    }
-}
-
-struct ColorSlider: View {
-    @Binding var value: Double
-    let sliderColor: Color
-    
-    var body: some View {
-        HStack {
-            Slider(value: $value, in: 0...255, step: 1)
-        }
     }
 }
