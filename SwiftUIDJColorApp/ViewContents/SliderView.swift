@@ -39,7 +39,19 @@ struct SliderStack: View {
             }
             
             TextField("0", text: $textFieldValue) {
-                self.sliderValue = Double(self.textFieldValue) ?? 0
+                if let doubleTextFieldValue = Double(self.textFieldValue) {
+                    switch doubleTextFieldValue {
+                    case ..<0:
+                        self.sliderValue = 0
+                    case 0...255:
+                        self.sliderValue = doubleTextFieldValue
+                    default:
+                        self.sliderValue = 255
+                    }
+                    self.textFieldValue = "\(Int(self.sliderValue))"
+                } else {
+                    self.textFieldValue = "0"
+                }
             }
                 .frame(width: 50, height: 35)
                 .foregroundColor(.black)
