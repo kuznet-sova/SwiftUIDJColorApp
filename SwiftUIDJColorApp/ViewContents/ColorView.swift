@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct ColorView: View {
-    let color: UIColor
+    var redValue: Double
+    var greenValue: Double
+    var blueValue: Double
     
     var body: some View {
         VStack {
-            Color(color)
+            Color(red: redValue/255, green: greenValue/255, blue: blueValue/255)
                 .cornerRadius(20)
                 .overlay(RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.white, lineWidth: 4))
@@ -25,6 +27,6 @@ struct ColorView: View {
 
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorView(color: .clear)
+        ColorView(redValue: 0.0, greenValue: 0.0, blueValue: 0.0)
     }
 }
