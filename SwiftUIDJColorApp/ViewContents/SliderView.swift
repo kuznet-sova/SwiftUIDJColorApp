@@ -9,17 +9,11 @@
 import SwiftUI
 
 struct SliderView: View {
-    @State private var sliderValue = 0.0
+    @Binding var sliderValue: Double
     @State private var textFieldValue = ""
     
     var body: some View {
         SliderStack(sliderValue: $sliderValue, textFieldValue: $textFieldValue)
-    }
-}
-
-struct SliderView_Previews: PreviewProvider {
-    static var previews: some View {
-        SliderView()
     }
 }
 
